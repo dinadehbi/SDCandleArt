@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+
+}
+body{
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+img{
+    height: 200px;
+    width: 300px;
+}
+section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  top: 100px;
+}
+.box{
+background-color: rgb(229, 220, 220);
+height: 300px;
+width: 300px;
+border-radius: 10px;
+overflow-x: hidden;
+overflow-y: auto;
+
+margin-top: 20px;
+
+}
+h1{
+    color: yellow;
+}
+#div1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+
+}
+#inp{
+    height: 30px;
+    width: 240px;
+    border: 2px solid  rgb(229, 220, 220);
+    background-color: white;
+    border-radius: 10px;
+}
+#srch{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 50px;
+}

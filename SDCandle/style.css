@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'springRegular';
+    src: url(fonts/Fontspring-DEMO-antebas-bold.otf);
+}
+body{
+display: flex;
+margin: 0;
+padding: 0;
+
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.image-ad{
+    width: 30vw;
+    height: 100vh;position: relative;
+    background: url(images/candle1.jpg);
+    background-repeat: no-repeat;background-size: cover;
+    background-position: 50% 50%;
+}
+.main-content{
+    width:70vw;
+    height: 100vh;
+}
+header{
+    height: 15vh;
+    display: flex;
+}
+.main-logo{
+    width: 30vmin;
+    background: url(images/Sd_Logo-removebg-preview.png) ;
+    background-repeat: no-repeat;background-size: contain;
+    background-position: 50% 50%;
+}
+.pages{
+    width:-webkit-fill-available;
+    display: flex;align-items: center;
+    justify-content: space-around;
+}
+a{
+font-family: 'springRegular';cursor: pointer;
+transition: all 0.2s;
+}
+a {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+  }
+a:hover{
+    color: #0087ca;
+}
+  
+a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.icons{
+    height: 15vh;display: flex;
+    align-items: center;justify-content: flex-end;
+    margin-right: 2vmin;
+}
+.profile-icon{
+    margin-right: 2vmin;
+    height: 6vmin;width: 6vmin;
+    background: url(svgs/person.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;cursor: pointer;
+}
+.search-icon{
+    height: 5.6vmin;width: 5.6vmin;
+    margin-right: 20px;
+    background: url(svgs/search.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;cursor: pointer;
+}
+.intro{height: 80vh;display: flex;}
+.infos{
+    border: 1px green solid;height:100%;width: 100%;
+    font-family: 'springRegular';
+}
+.infos>h3{
+    font-size: 20px;margin: 0;
+    margin-top: 10vmin;
+}
+.infos>h1{
+    font-size: 50px;color: #0087ca;margin: 0;
+}
+.infos>p{
+    margin: 0;
+}
+.infos>*{
+    margin-left: 6vmin !important;
+}
+
